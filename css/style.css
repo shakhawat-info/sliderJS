@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+}
+img {
+  width: 100%;
+}
+.main {
+  position: relative;
+  margin-top: 100px;
+}
+.slider {
+  position: relative;
+  max-width: 1000px;
+  background-color: beige;
+  overflow: hidden;
+}
+.slider .slides {
+  display: flex;
+  transition: all linear 0.8s;
+  -webkit-transition: all linear 0.8s;
+  -moz-transition: all linear 0.8s;
+  -ms-transition: all linear 0.8s;
+  -o-transition: all linear 0.8s;
+}
+.slider .slides .item {
+  min-width: 100%;
+}
+.slider .slides .item.hacker{
+  display: grid;
+  place-items: center;
+}
+.slider .slides .item img,
+.slider .slides .item video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.prevArrow,
+.nextArrow {
+  position: absolute;
+  top: 45%;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border: none;
+  background-color: #ffa725;
+  color: #f1f1f1;
+}
+.prevArrow {
+  left: -7%;
+}
+.nextArrow {
+  right: -7%;
+}
+
+.dots {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.dots .dot {
+  cursor: pointer;
+  width: 10px;
+  height: 10px;
+  background-color: black;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.dots .dot.active {
+  background-color: #ffa725;
+}
