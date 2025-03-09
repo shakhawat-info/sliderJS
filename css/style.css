@@ -17,8 +17,8 @@ img {
 .slider {
   position: relative;
   max-width: 1000px;
-  background-color: beige;
   overflow: hidden;
+  margin: auto;
 }
 .slider .slides {
   display: flex;
@@ -86,3 +86,27 @@ img {
 .dots .dot.active {
   background-color: #ffa725;
 }
+
+
+
+@media (min-width: 320px) and (max-width: 991.98px) { 
+  .slider {
+    max-width: 80%;
+  }
+
+.prevArrow,
+.nextArrow {
+  top: 30%;
+  width: 35px;
+  height: 35px;
+}
+  .prevArrow {
+    left: 5%;
+  }
+  .nextArrow {
+    right: 5%;
+  }
+  .slider .slides .item.hacker{
+    padding: 50px;
+  }
+ }
